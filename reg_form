@@ -1,0 +1,175 @@
+
+
+<!DOCTYPE html>
+<html>
+		<head>
+				<title><b><ul>Simple Intrest..</ul></b></title>	
+		<link href="../CSS/emp.css" rel="stylesheet"/>
+		
+		</head>
+		
+		<body style="background:lightyellow">
+		<h2 style="text-align:center">Registeration Form</h2>
+		<marquee direction="left">
+		<h2 style=""><b><i>CapGemini India Pvt. Ltd.</i></b></h2>
+		</marquee>
+		<hr/>
+				<form method="post" >
+				<table align="center" cellpadding="5" cellspacing="10">
+						<tr>
+								<td class="right">First Name:</td>
+								<td>
+										<input type="text" name ="txtFN"  autofocus pattern=[a-zA-Z]{3,10}
+										 id="txtFN" placeholder="First Name"/>
+								</td>
+						</tr>	
+						<tr>
+								<td class="right">Last Name:</td>
+								<td>
+										<input type="text" name ="txtLN"  
+										 id="txtLN" placeholder="Last Name"/>
+								</td>
+						</tr>	
+						<tr>
+								<td>User Name:</td>
+								<td>
+										<input type="text" name ="txtUN" maxlength="8"
+										 id="txtUN" placeholder="User Name"/>
+								</td>
+						</tr>	
+						<tr>
+								<td>Password:</td>
+								<td>
+										<input type="password" name ="txtPASS"
+										 id="txtPASS" placeholder="Password"/>
+								</td>
+						</tr>	
+							<tr>
+								<td>Age:</td>
+								<td>
+										<input type="number" min="18" max="20" step="2" 
+										 id="txtAGE" placeholder="Age"/>
+								</td>
+						</tr>	
+						
+						<tr>
+								<td>Gender:</td>
+								<td>
+										<input type="radio" id="rbtMale" name="gender" value="M" checked
+										 />Male
+										 <input type="radio" id="rbtFemale" name="gender" value="F" 
+										 />Female
+								</td>
+						</tr>	
+							<tr>
+								<td>Languages Known:</td>
+								<td>
+										<input type="checkbox" id="chkHind" name="chkLK" checked
+										 />HINDI
+										 <input type="checkbox" id="chkEnglish" name="chkLK" 
+										 />ENGLISH
+										 <input type="checkbox" id="chkFrench" name="chkLK" 
+										 />FRENCH
+										 <input type="checkbox" id="chkGerman" name="chkLK" 
+										 />GERMAN
+										 <input type="checkbox" id="chkSpanish" name="chkLK" 
+										 />spanish
+								</td>
+						</tr>	
+						
+						<tr>
+								<td class="right">Select City:&nbsp;&nbsp;</td>
+								<td>
+								<select name="ddlcity" style="width:150px">
+								<option value="Hyderabad">Hyderabad</option>
+								<option value="Delhi">Delhi</option>
+								<option value="Mumbai">Mumbai</option>
+								<option value="Kokata">Kokata</option>
+								<option value="Chennai">Chennai</option>
+								</select>
+								</td>
+						</tr>
+						
+						<tr>
+								<td>State:&nbsp;&nbsp;</td>
+								<td>
+										<input type="text" id="txtstate"
+										name="State" list="StateList"/>
+										<datalist id="StateList">
+										<option value="Maharashtra">MH</option>
+										<option value="AndraPradesh">AP</option>
+										<option value="UttarPradesh">UP</option>
+										<option value="TamilNadu">TM</option>
+										<option value="Karnataka">KA</option>
+										<option value="Panjab">PN</option>
+										<option value="Harayana">HR</option>
+										</datalist>
+								</td>
+						</tr>
+						
+							<tr>
+							<td class="right">Slider:&nbsp;&nbsp;</td>
+							<td>
+									<input type="range" id="txtRange" name="txtRange" min="0" value="0"/>
+								</td>
+						</tr>
+								<td class="right"> Upload photo:&nbsp;&nbsp;</td>
+								<td>
+										<input type="file" id="fileImg" name="fileImg"/>
+								</td>
+						</tr>
+						
+						
+						<tr>
+								<td>URL:</td>&nbsp;&nbsp;
+								<td><input type="url" id="url" placeholder="URL"/>
+								</td>
+						</tr>
+						<tr>
+								<td>Date:&nbsp;&nbsp;&nbsp</td>
+								<td><input type="date" name="txtDOJ" max="2017-09-07" min="1995-06-01" /></td>
+						</tr>
+						
+							<tr>
+								<td>Email Address:</td>
+								<td>
+										<input type="email" size="40"
+										 id="txtEML" placeholder="Email Address"/>
+								</td>
+						</tr>	
+						<tr>
+								<td>Mobile:</td>
+								<td>
+										+91-<input type="number"  pattern="[7-9][0-9]{8}" readonly
+										 id="txtMOB" placeholder="Mobile Number"/>
+								</td>
+						</tr>
+						<tr>
+								<td>Address:</td>
+								<td>
+										<textarea rows="5" col="60"  size="40" 
+										 id="txtADDR" placeholder="Address">
+										 </textarea>
+								</td>
+						</tr>	
+					<tr>	
+					<td>
+								<input type="submit" value="Submit" class="btn"/>
+						</td>
+						<td>
+								<input type="reset" value="Clear" class="btn"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</td>
+						<td>
+							<input type="hidden" name="message" id="message" value="hello world"/>
+						</td>
+					<td>
+						
+					</tr>
+				</table>		
+			</form>
+			
+				<h2>&copy; 2016 CapGemini India Pvt. Ltd.</h2>
+		</body>
+		<button class="btn" onclick="alert(document.forms[0].message.value)">Cilck me..</button>
+					</td>
+</html>
